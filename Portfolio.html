@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
@@ -13,118 +13,86 @@
         <style>
           body{
           background-image: url(assets/images/background.png);
-          height: 850px ;
-                     }
-
-          .first{
-          background-color:white ;
-          margin-top: 0%;
-          height: auto;
-          padding: 15px;
-          }
-          ul{           
-            color: black;
-            margin-top: 5px;
-            text-align: top;
+          /* height: 850px ; */
             }
-          .navigation {
-            padding-top: 5px;
-            }
-        
-          #Name{
-            background-color: lightseagreen;
-            width: 150px ;
-            margin-left: 50px;
-            font-size: 25px;
-            text-align: center;
-            margin-top: 10px;
-            color: white;
-            float: left;
-          }
-          #Portfilo{
-              font-size: 40px;
-              color: lightseagreen ;
-              margin-top: 15px;
-             
-              
-              margin-left: 30px;
-        
-          }
-          .container{
-              /* position: absolute; */
-            height: fit-content;
-            width: fit-content;
-            margin: 200px;  
+            .container{
             margin-top: 25px;
-            right: -20px;
             background-color: white; 
             margin-bottom: 50px;
-            margin-left: 50px;
+            margin-left: 25px;
             padding-bottom: 50px;
-                    
+
           }
-       
+          .navbar-brand {
+          color: white !important;
+          background-color:lightseagreen;
+          margin-left: 125px;
+          font-size: 30px;
+           }
         
           .footer {
-            background-color: rgb(39, 32, 32) ;
-            height: 50px;
-            text-align: center;
-            padding: 15px ;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:rgb(39, 32, 32);
             color: white;
+            text-align: center;
+            padding: 15px;}
 
-          }
-          #image{
-              margin: 15px;
-          }
-          
-
+            .col-12 {
+            color: lightseagreen;
+            font-size: 40px;
+            font-size: 36px;
+             margin-left: 130px;
+             }
         </style>
 
-            <div class="first">
-              <div class="col outline">
-                  <p id="Name"> <strong>Your Name</strong></p>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <div class="container-fluid" style="margin: 15px;" >
+                <a class="navbar-brand" href="#">&nbsp; Your Name &nbsp;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                    </li>        
+                    <li class="nav-item">
+                      <a class="nav-link active " href="index.html">About</a>
+                    </li>
+                  </ul>      
+                </div>
               </div>
-              <div class="navigation">
+            </nav>
 
-                  <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" target="contact.html"  href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" target="Portfilo.html" href="#">Portfilo</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" target="index.html" href="#"><strong>About</strong>  </a>
-                    </li>
-                    
-                  </ul>
+            <div class="container">
+            <div class="row card-body">
+              <div class="col-12" > About Me </div>
+
+              <div class="col-md-6">
+                  <img class="img-fluid mx-auto my-3 d-block" src="https://via.placeholder.com/350"  alt="placeholder"/>
               </div>
-            </div>
-            
-          <section class="container">
-              <article class=" head1">
-                <p id="Portfilo" > <strong>Portfilo</strong></p>
-              </article>
+              <div class="col-md-6">
+                  <img class="img-fluid mx-auto my-3 d-block" src="https://via.placeholder.com/350" alt="placeholder"/>
+              </div>
+              <div class="col-md-6">
+                  <img class="img-fluid mx-auto my-3 d-block" src="https://via.placeholder.com/350" alt="placeholder"/>
+              </div>
+              <div class="col-md-6">
+                  <img class="img-fluid mx-auto my-3 d-block" src="https://via.placeholder.com/350" alt="placeholder"/>
+              </div>
+              <div class="col-md-6">
+                  <img class="img-fluid mx-auto my-3 d-block" src="https://via.placeholder.com/350" alt="placeholder"/>
+              </div>
+          </div>
+        </div>
 
-              <article class="article" >
-                <img id="image" src="assets/images/350x350.jpg"  alt="...">
-                <img id="image" src="assets/images/350x350.jpg"  alt="...">
-              </article>
-              <article class="article1">
-                <img id="image" src="assets/images/350x350.jpg"  alt="...">
-                <img id="image" src="assets/images/350x350.jpg"  alt="...">
-              </article>
-              <article class="article2">
-                <img id="image" src="assets/images/350x350.jpg"  alt="...">
-              </article>
-     
-          </section>
-          
-        <footer class="footer" >
-
-          <p  > © Copyright </p>
-
-        </footer>
+        <footer class="footer"> © Copyright </footer>
           
 
 
